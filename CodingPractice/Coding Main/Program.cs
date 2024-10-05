@@ -28,3 +28,13 @@ using Coding_Main.Programs;
 //ReverseOrderOfWords reverseOrderOfWords = new ReverseOrderOfWords();
 
 //Console.WriteLine(reverseOrderOfWords.ReverseOrderOfTheWords(str));
+
+
+
+//Q.5: How to count the occurrence of each character in a string?
+
+//CountOccurenceOfChar countOccurenceOfChar = new CountOccurenceOfChar();
+
+//string s = Console.ReadLine();
+
+//countOccurenceOfChar.PrintCountofOccurencesOfEachCharacter(s);  
