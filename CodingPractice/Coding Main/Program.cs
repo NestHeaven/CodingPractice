@@ -18,3 +18,13 @@ using Coding_Main.Programs;
 //Palindrome palindrome = new Palindrome();
 
 //Console.WriteLine(palindrome.CheckPalindrome(str));
+
+
+
+//Q.3: How to reverse the order of words in a given string?
+
+//string str = Console.ReadLine();
+
+//ReverseOrderOfWords reverseOrderOfWords = new ReverseOrderOfWords();
+
+//Console.WriteLine(reverseOrderOfWords.ReverseOrderOfTheWords(str));
