@@ -41,8 +41,12 @@ using Coding_Main.Programs;
 
 //Q.6: How to remove duplicate characters from a string?
 
-string s = Console.ReadLine();
+//string s = Console.ReadLine();
 
-RemoveDuplicateCharFromString removeDuplicateCharFromString = new RemoveDuplicateCharFromString();
+//RemoveDuplicateCharFromString removeDuplicateCharFromString = new RemoveDuplicateCharFromString();
 
-Console.WriteLine(removeDuplicateCharFromString.RemoveDuplicateCharacters(s));
+//Console.WriteLine(removeDuplicateCharFromString.RemoveDuplicateCharacters(s));
+
+
+//How to find if a positive integer is a prime number or not?
+//Prime.IsPrime(29);
