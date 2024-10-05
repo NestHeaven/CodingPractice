@@ -38,3 +38,11 @@ using Coding_Main.Programs;
 //string s = Console.ReadLine();
 
 //countOccurenceOfChar.PrintCountofOccurencesOfEachCharacter(s);  
+
+//Q.6: How to remove duplicate characters from a string?
+
+string s = Console.ReadLine();
+
+RemoveDuplicateCharFromString removeDuplicateCharFromString = new RemoveDuplicateCharFromString();
+
+Console.WriteLine(removeDuplicateCharFromString.RemoveDuplicateCharacters(s));
