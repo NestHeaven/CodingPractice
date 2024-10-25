@@ -1,5 +1,6 @@
 ﻿
 
+using Coding_Main.Delegate;
 using Coding_Main.Programs;
 
 //Q.1: How to reverse a string?
@@ -50,3 +51,12 @@ using Coding_Main.Programs;
 
 //How to find if a positive integer is a prime number or not?
 //Prime.IsPrime(29);
+
+
+//DelegateDelegate delegateDelegate = new DelegateDelegate(Class1.PrintName);
+
+//delegateDelegate("harsh");
+
+//Func<string> ss = Class1.FuncGenericDelegate;
+
+//Action<string> a = Class1.PrintName;
