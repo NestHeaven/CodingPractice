@@ -75,5 +75,28 @@ using System.Reflection;
 //LinkedListMain.Main();
 
 
-Console.WriteLine(ValidatePattern.ValidateThePattern("{{{{{{{{{}}}}}}}}}"));
+//Console.WriteLine(ValidatePattern.ValidateThePattern("{}{"));
+
+
+//LinkedListMain linkedListMain = new LinkedListMain();
+
+//linkedListMain.AddNodeToLast(7);
+
+//linkedListMain.AddNodeToLast(8);
+
+//linkedListMain.AddNodeToLast(9);
+
+
+//linkedListMain.InsertElementAtTheBegining(6);
+
+//linkedListMain.InsertElementAtSpecificPosition(3, 4);
+
+//linkedListMain.RemoveFirstElementFromLinkedList();
+
+//linkedListMain.RemoveLastElementFromTheLinkedList();
+
+//linkedListMain.DeleteAtSpecificLocation(2);
+//linkedListMain.DeleteAtSpecificLocation(1);
+//linkedListMain.DeleteAtSpecificLocation(2);
+//linkedListMain.TraverseLinkedList();
 
