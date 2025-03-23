@@ -142,7 +142,7 @@
             var p = head;
 
             int index = 1;
-            while(index < size)
+            while(index < size-1)
             {
                 p = p.Next;
                 index++;
@@ -165,23 +165,22 @@
                 return;
 
             }
-
             Console.WriteLine($"Deleting element at position {index}");
-            int i = 1;
-            var p = head;
 
-            if (i + 1 < index)
+            if (index == 1)
             {
-                p = p.Next;
-                i++;
-            }
-
-            if (i == 1)
-            {
-                head = p.Next;
+                head = head.Next;
             }
             else
             {
+                int i = 1;
+                var p = head;
+
+                while (i < index - 1)
+                {
+                    p = p.Next;
+                    i++;
+                }
                 p.Next = p.Next.Next;
             }
 
