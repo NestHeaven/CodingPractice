@@ -182,6 +182,11 @@
                     i++;
                 }
                 p.Next = p.Next.Next;
+
+                if(index == size)
+                {
+                    tail = p;
+                }
             }
 
             size--;
