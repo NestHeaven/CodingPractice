@@ -133,6 +133,66 @@
 
             Size++;
         }
+
+
+        public void DeleteFromTheBegining()
+        {
+            if (!IsEmpty()) {
+
+                Head.Next.Previous = null;
+                Head = Head.Next;
+                Size--;
+            }
+        }
+
+        public void DeleteFromTheEnding() {
+            if (!IsEmpty()) { 
+                
+                var p = Head;
+
+                while(p.Next.Next != null)
+                {
+                    p = p.Next;
+                }
+                p.Next = null;
+
+                Tail = p;
+
+                Size--;
+
+            }
+        }
+
+        public void DeleteAtSpecificIndex(int index)
+        {
+            if(index > this.Size-1 || index < 0)
+            {
+                Console.WriteLine("Index out of bound");
+            }
+            else
+            {
+                if(index == 0)
+                {
+                    Head.Next.Previous = null;
+                    Head = Head.Next;
+                }
+                else
+                {
+                    var i = 0;
+                    var  p = Head;
+                    while (i < index-1)
+                    {
+                        p = p.Next;
+                        i++;
+                    }
+
+                    p.Next = p.Next.Next;
+                    p.Next.Previous = p;
+                }
+
+                Size--;
+            }
+        }
     }
 
     public class DoublyLinkedList

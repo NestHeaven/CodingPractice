@@ -134,6 +134,23 @@ using System.Reflection;
 
 //doublyLinkedListMain.TraverseDoublyLinkedList();
 
+//doublyLinkedListMain.DeleteFromTheBegining();
+
+//doublyLinkedListMain.TraverseDoublyLinkedList();
+
+//doublyLinkedListMain.DeleteFromTheEnding();
+
+//doublyLinkedListMain.TraverseDoublyLinkedList();
+
+//doublyLinkedListMain.DeleteAtSpecificIndex(2);
+
+//doublyLinkedListMain.TraverseDoublyLinkedList();
+
+
+//doublyLinkedListMain.DeleteAtSpecificIndex(1);
+
+//doublyLinkedListMain.TraverseDoublyLinkedList();
+
 
 
 
