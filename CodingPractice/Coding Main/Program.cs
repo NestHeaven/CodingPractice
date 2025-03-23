@@ -95,8 +95,48 @@ using System.Reflection;
 
 //linkedListMain.RemoveLastElementFromTheLinkedList();
 
-//linkedListMain.DeleteAtSpecificLocation(2);
+//linkedListMain.DeleteAtSpecificLocation(3);
 //linkedListMain.DeleteAtSpecificLocation(1);
 //linkedListMain.DeleteAtSpecificLocation(2);
 //linkedListMain.TraverseLinkedList();
+
+
+//CircularLinkedList circularLinkedList = new CircularLinkedList();
+
+//circularLinkedList.InsertElementAtTheEnd(2);
+//circularLinkedList.InsertElementAtTheEnd(3);
+//circularLinkedList.InsertElementAtTheEnd(4);
+
+//circularLinkedList.TraverseCircularLinkedListBySize();
+
+
+
+//DoublyLinkedListMain doublyLinkedListMain = new DoublyLinkedListMain();
+
+//doublyLinkedListMain.InserAtTheEnd(1);
+//doublyLinkedListMain.InserAtTheEnd(2);
+//doublyLinkedListMain.InserAtTheEnd(3);
+//doublyLinkedListMain.TraverseDoublyLinkedList();
+//doublyLinkedListMain.InsertElementInTheStarting(0);
+
+
+//doublyLinkedListMain.TraverseDoublyLinkedList();
+
+//doublyLinkedListMain.InsertAtParticularPosition(-1, 0);
+
+//doublyLinkedListMain.TraverseDoublyLinkedList();
+
+//doublyLinkedListMain.InsertAtParticularPosition(7, 3);
+
+//doublyLinkedListMain.TraverseDoublyLinkedList();
+
+//doublyLinkedListMain.InsertAtParticularPosition(11, 6);
+
+//doublyLinkedListMain.TraverseDoublyLinkedList();
+
+
+
+
+
+
 
