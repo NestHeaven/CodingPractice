@@ -1,4 +1,5 @@
-﻿using Coding_Main.DataStructure.Stacks;
+﻿using Coding_Main.DataStructure.Queue;
+using Coding_Main.DataStructure.Stacks;
 
 //Q.1: How to reverse a string?
 //string str = Console.ReadLine();
@@ -161,6 +162,28 @@
 //stackUsingLinkedList.push(6);
 
 //stackUsingLinkedList.Display();
+
+
+//QueueUsingArray queueUsingArray = new QueueUsingArray(3);
+
+//queueUsingArray.Enqueue(1);
+
+//queueUsingArray.FetchFirst();
+//queueUsingArray.Enqueue(2);
+//queueUsingArray.Enqueue(3);
+
+//queueUsingArray.FetchFirst();
+//queueUsingArray.Enqueue(4);
+//queueUsingArray.Dequeue();
+
+//queueUsingArray.FetchFirst();
+//queueUsingArray.Dequeue();
+
+//queueUsingArray.FetchFirst();
+//queueUsingArray.Dequeue();
+
+//queueUsingArray.FetchFirst();
+//queueUsingArray.Dequeue();
 
 
 
