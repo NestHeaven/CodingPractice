@@ -1,11 +1,4 @@
-﻿
-
-using Coding_Main.Asynchronous_Programming;
-using Coding_Main.DataStructure.LinkedList;
-using Coding_Main.Delegate;
-using Coding_Main.Leetcode;
-using Coding_Main.Programs;
-using System.Reflection;
+﻿using Coding_Main.DataStructure.Stacks;
 
 //Q.1: How to reverse a string?
 //string str = Console.ReadLine();
@@ -151,6 +144,23 @@ using System.Reflection;
 
 //doublyLinkedListMain.TraverseDoublyLinkedList();
 
+//StacksUsingArray s = new StacksUsingArray(3);
+
+//s.Push(2);
+//s.Push(1);
+//s.Push(3);
+//s.Pop();
+//s.Push(4);
+
+//s.DisplayStack();
+
+//StackUsingLinkedList stackUsingLinkedList = new StackUsingLinkedList();
+
+//stackUsingLinkedList.push(4);
+//stackUsingLinkedList.push(5);
+//stackUsingLinkedList.push(6);
+
+//stackUsingLinkedList.Display();
 
 
 
