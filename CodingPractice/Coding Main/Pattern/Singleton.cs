@@ -18,7 +18,7 @@
                 return instance;
             }
         }
-        public Singleton()
+        private Singleton()
         {
             
         }
