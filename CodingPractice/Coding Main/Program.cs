@@ -1,4 +1,5 @@
-﻿using Coding_Main.DataStructure.Queue;
+﻿using Coding_Main.DataStructure.BinaryTree;
+using Coding_Main.DataStructure.Queue;
 using Coding_Main.DataStructure.Stacks;
 
 //Q.1: How to reverse a string?
@@ -185,6 +186,44 @@ using Coding_Main.DataStructure.Stacks;
 //queueUsingArray.FetchFirst();
 //queueUsingArray.Dequeue();
 
+
+//QueueUsingLinkedList<int> queueUsingLinkedList = new QueueUsingLinkedList<int>();
+
+//queueUsingLinkedList.Enqueue(0);
+//queueUsingLinkedList.Enqueue(1);
+//queueUsingLinkedList.Dequeue();
+
+
+
+BinarySearchTree binarySearchTree = new BinarySearchTree();
+
+//binarySearchTree.InsertElementInABinarySearchTree(5);
+//binarySearchTree.InsertElementInABinarySearchTree(3);
+//binarySearchTree.InsertElementInABinarySearchTree(8);
+//binarySearchTree.InsertElementInABinarySearchTree(1);
+//binarySearchTree.InsertElementInABinarySearchTree(4);
+
+
+//Console.WriteLine(binarySearchTree.SearchAnElementInABinarySearchTreeIteratively(1));
+//Console.WriteLine(binarySearchTree.SearchAnElementInABinarySearchTreeIteratively(10));
+//Console.WriteLine(binarySearchTree.SearchAnElementInABinarySearchTreeRecursively(1, binarySearchTree.Root));
+//Console.WriteLine(binarySearchTree.SearchAnElementInABinarySearchTreeRecursively(10, binarySearchTree.Root));
+
+//binarySearchTree.WrapperMethodForRecursiveInsert(3);
+//binarySearchTree.WrapperMethodForRecursiveInsert(2);
+//binarySearchTree.WrapperMethodForRecursiveInsert(0);
+//binarySearchTree.WrapperMethodForRecursiveInsert(1);
+
+
+
+
+
+//binarySearchTree.LevelOrderTraversal();
+
+//binarySearchTree.DeleteElementFromBST(3);
+
+
+//binarySearchTree.LevelOrderTraversal();
 
 
 
