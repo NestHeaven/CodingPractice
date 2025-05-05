@@ -9,13 +9,13 @@
             _weightMachine = weightMachine;
         }
 
-        public int GetWeightInPounds()
+        public double GetWeightInPounds()
         {
             var a = _weightMachine.GetWeightInKgs();
 
             // Add a logic to convert in Pound
 
-            return a;
+            return a * 0.45;
         }
     }
 }

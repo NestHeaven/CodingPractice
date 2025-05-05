@@ -2,6 +2,6 @@
 {
     public interface IPoundAdapter
     {
-        int GetWeightInPounds();
+        double GetWeightInPounds();
     }
 }
