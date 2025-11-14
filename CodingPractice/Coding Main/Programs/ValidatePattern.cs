@@ -1,4 +1,6 @@
-﻿namespace Coding_Main.Programs
+﻿using System.Collections.Generic;
+
+namespace Coding_Main.Programs
 {
     public class ValidatePattern
     {
@@ -26,6 +28,7 @@
                 else if(pattern[i] == '}' && chars.Count <= 0)
                 {
                     isValidPattern = false;
+                    break;
                 }
             }
 

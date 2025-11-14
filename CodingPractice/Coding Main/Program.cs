@@ -1,6 +1,11 @@
 ﻿using Coding_Main.DataStructure.BinaryTree;
+using Coding_Main.DataStructure.Heap;
+using Coding_Main.DataStructure.LinkedList;
 using Coding_Main.DataStructure.Queue;
 using Coding_Main.DataStructure.Stacks;
+using Coding_Main.LLD.DesignPattern.StructuralDesignPattern.Composite_Design_Pattern.Problem_2_Calculater;
+using Coding_Main.LLD.DesignPattern.StructuralDesignPattern.Composite_Design_Pattern.Solution;
+using Coding_Main.Programs;
 
 //Q.1: How to reverse a string?
 //string str = Console.ReadLine();
@@ -195,7 +200,7 @@ using Coding_Main.DataStructure.Stacks;
 
 
 
-BinarySearchTree binarySearchTree = new BinarySearchTree();
+//BinarySearchTree binarySearchTree = new BinarySearchTree();
 
 //binarySearchTree.InsertElementInABinarySearchTree(5);
 //binarySearchTree.InsertElementInABinarySearchTree(3);
@@ -210,6 +215,7 @@ BinarySearchTree binarySearchTree = new BinarySearchTree();
 //Console.WriteLine(binarySearchTree.SearchAnElementInABinarySearchTreeRecursively(10, binarySearchTree.Root));
 
 //binarySearchTree.WrapperMethodForRecursiveInsert(3);
+//binarySearchTree.WrapperMethodForRecursiveInsert(6);
 //binarySearchTree.WrapperMethodForRecursiveInsert(2);
 //binarySearchTree.WrapperMethodForRecursiveInsert(0);
 //binarySearchTree.WrapperMethodForRecursiveInsert(1);
@@ -224,6 +230,189 @@ BinarySearchTree binarySearchTree = new BinarySearchTree();
 
 
 //binarySearchTree.LevelOrderTraversal();
+
+//Console.WriteLine(binarySearchTree.CountNoOfNodesInBST(binarySearchTree.Root));
+
+
+
+//HeapUsingArray heap = new HeapUsingArray(2);
+
+//heap.InsertIntoHeap(20);
+//heap.InsertIntoHeap(14);
+//heap.InsertIntoHeap(2);
+//heap.InsertIntoHeap(15);
+//heap.InsertIntoHeap(10);
+//heap.InsertIntoHeap(21);
+//heap.InsertIntoHeap(18);
+//heap.InsertIntoHeap(19);
+
+//heap.DeleteElementFromHeap();
+
+
+//CompositeMain.Main();
+
+
+//CompositeProblem2Main.Main();
+
+
+//int[] nums = new int[] { 0, 1, 1, 1, 0, 0 };
+//Minimum_Operations.MinOperations(nums);
+
+
+//A a = new A();  
+
+//a.Name = string.Empty;
+
+//a.Id = string.Empty;
+//public class A
+//{
+
+//    public string Id
+//    {
+//        get
+//        {
+//            return Id;
+//        }
+//        set
+//        {
+//            if (string.IsNullOrEmpty(value))
+//            {
+//                throw new ArgumentException("");
+//            }
+
+//            Id = value;
+//        }
+//    }
+
+//    public string Name;
+//}
+
+
+List<int> a = new List<int> { 3, 2, 7, 7, 4, 6 };
+List<int> b = new List<int> { 7, 7, 4 };
+var r = FindSubArray(a, b);
+
+Console.WriteLine(r);
+
+static bool FindSubArray(List<int> a, List<int> b)
+{
+
+    bool isSubArray = false;
+
+    Dictionary<int, int> results = new Dictionary<int, int>();
+
+    for (int i = 0; i < b.Count; i++)
+    {
+
+        for (int j = 0; j < a.Count; j++)
+        {
+
+            //Console.WriteLine($"{a[j]}{b[i]}");
+            if (b[i] == a[j] && !results.ContainsKey(a[j]))
+            {
+                results[a[j]] = j;
+            }
+            else if (b[i] == a[j] && results.ContainsKey(a[j]) && results[a[j]] != j)
+            {
+                results[a[j]] = j;
+            }
+        }
+    }
+
+    if (results.Count != b.Count)
+    {
+        return isSubArray;
+    }
+    var sorted = results.Values.OrderBy(x => x).ToList();
+
+    for (int i = 1; i < sorted.Count; i++)
+    {
+
+        if ((sorted[i] - sorted[i - 1]) != 1)
+        {
+            return false;
+        }
+    }
+
+    return true;
+}
+
+Console.ReadLine();
+
+
+
+
+
+public interface A
+{
+    void Print();
+}
+
+
+public class B : A
+{
+    public void Print()
+    {
+        throw new NotImplementedException();
+    }
+}
+
+
+public class C : A
+{
+    public void Print()
+    {
+        throw new NotImplementedException();
+    }
+}
+
+
+
+
+public class Service
+{
+
+    public readonly A _a;
+
+
+    public Service(A a)
+    {
+        _a = a;
+    }
+
+
+    public void Print()
+    {
+        _a.Print();
+    }
+
+}
+
+
+public interface IA
+{
+    void Print();
+}
+
+
+public interface IB
+{
+    void Print();
+}
+
+
+public class Ca : IA, IB
+{
+    public void Print()
+    {
+        Console.WriteLine("Harsh");
+    }
+}
+
+
+
+
+
 
 
 

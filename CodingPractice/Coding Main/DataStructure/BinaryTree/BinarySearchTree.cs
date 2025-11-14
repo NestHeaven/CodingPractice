@@ -1,4 +1,6 @@
-﻿namespace Coding_Main.DataStructure.BinaryTree
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Coding_Main.DataStructure.BinaryTree
 {
     public class BinarySearchTree
     {
@@ -242,6 +244,15 @@
             }
             else 
                 return false;
+        }
+
+        public int CountNoOfNodesInBST(LinkedNode<int> current)
+        {
+
+            if(current == null)
+                return 0;
+            var count = 1 + CountNoOfNodesInBST(current.Left) + CountNoOfNodesInBST(current.Right);
+            return count;
         }
 
     }
